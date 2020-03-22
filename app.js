@@ -3,8 +3,8 @@ const client = new Discord.Client();
 const message = require('./message');
 require('dotenv').config();
 
-var interval;
-let minute = 60000;
+let interval;
+const minute = 60000;
 let time = 60*minute
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
